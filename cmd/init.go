@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"gin-cli/app/initProject"
+	"github.com/codeHauler-1/gin-cli/app/initProject"
 	"github.com/spf13/cobra"
 )
 
