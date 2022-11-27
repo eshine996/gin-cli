@@ -18,7 +18,7 @@ func GenerateDao(dsn string) (err error) {
 	}
 
 	generator := gen.NewGenerator(gen.Config{
-		ModelPkgPath: "dao/entity",
+		ModelPkgPath: "model/entity",
 	})
 
 	generator.UseDB(db)
