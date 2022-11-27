@@ -25,7 +25,7 @@ var daoCmd = &cobra.Command{
 		vp.SetConfigType("yaml")
 		vp.AddConfigPath("configs")
 		vp.AddConfigPath(".")
-		dns := vp.GetString("Mysql.default.link")
+		dns := vp.GetString("mysql.default.link")
 		if dns == "" {
 			fmt.Println("Error:not found mysql link in config.yaml")
 			return
