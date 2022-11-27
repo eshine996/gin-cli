@@ -23,8 +23,12 @@ var daoCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		vp := viper.New()
 		vp.SetConfigType("yaml")
-		vp.AddConfigPath("configs")
 		vp.AddConfigPath(".")
+		if err := vp.ReadInConfig(); err != nil {
+			fmt.Println(fmt.Sprintf("Error:%s", err.Error()))
+			return
+		}
+
 		dns := vp.GetString("mysql.default.link")
 		if dns == "" {
 			fmt.Println("Error:not found mysql link in config.yaml")
