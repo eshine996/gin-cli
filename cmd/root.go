@@ -6,7 +6,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "gin-cli",
-	Short: "Engineering example based on gin framework",
+	Short: "gin framework client helper",
 }
 
 // Execute executes the root command.

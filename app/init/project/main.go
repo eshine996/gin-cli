@@ -1,4 +1,4 @@
-package initProject
+package project
 
 import (
 	"bytes"

@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/codeHauler-1/gin-cli/app/initProject"
+	"github.com/codeHauler-1/gin-cli/app/init/project"
 	"github.com/spf13/cobra"
 )
 
@@ -21,12 +21,13 @@ var initCmd = &cobra.Command{
 		}
 
 		projectName := args[0]
-		if err := initProject.NewProject(projectName); err != nil {
+		if err := project.NewProject(projectName); err != nil {
 			fmt.Println("Error:", err)
 			return
 		}
 		fmt.Println(fmt.Sprintf("project %s init success!", projectName))
 		fmt.Println("you can exec:")
 		fmt.Println(fmt.Sprintf("     cd %s && go mod tidy && go run main.go", projectName))
+		fmt.Println("done!")
 	},
 }
