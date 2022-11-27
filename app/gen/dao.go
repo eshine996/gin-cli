@@ -2,6 +2,7 @@ package gen
 
 import "fmt"
 
-func GenDao(dns string) {
+func GenerateDao(dns string) (err error) {
 	fmt.Println(dns)
+	return
 }
