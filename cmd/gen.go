@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/codeHauler-1/gin-cli/app/gen"
+	"git.xiaoyanggroup.cn/xyyjyframework/gin-cli/app/gen"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

@@ -1,4 +1,4 @@
-module github.com/codeHauler-1/gin-cli
+module git.xiaoyanggroup.cn/xyyjyframework/gin-cli
 
 go 1.18
 
